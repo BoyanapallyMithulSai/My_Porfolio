@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Portfolio</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+
+        body{
+            font-family:'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(242, 250, 185);
+            background-position: center;
+            background-size: cover;
+
+        
+
+            header{
+                background-color: bisque;
+                padding: 20px;
+                text-align:center; 
+            }
+            section{
+                font-size: large;
+            }
+            #SKILLS p{
+                margin left: 500px;
+                font-style: italic;
+                font-weight: 500;
+                text-align: center;}
+
+            .grid {
+                     display: grid;
+                     grid-template-columns: repeat(3, 1fr);
+                     gap: 20px;
+                     max-width: 1000px;
+                     margin: auto;
+            }
+            .contact {
+                padding: 80px 20px;
+                background-color:darkslategrey;
+                color: white;
+                text-align: center;
+             }
+             
+             .contact .section-title {
+                font-size: 2.5rem;
+                color: cyan;
+                margin-bottom: 40px;
+             }
+             .contact-form {
+                max-width: 600px;
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .contact-form input,
+            .contact-form textarea {
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            background-color: #f0f0f0;
+            resize: none;
+        }
+        
+        .contact-form button {
+            padding: 15px;
+            background-color: #00bcd4;
+            color: white;
+            font-size: 1rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+         }
+         
+         .contact-form button:hover {
+            background-color: #0ac82c;
+        }
+            }
+           
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1><b>WELCOME TO MY PORTFOLIO</b></h1>
+        <body class="bg-gray-100">
+
+            <nav class="bg-white shadow-md">
+              <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between h-16">
+                  <div class="flex items-center">
+                  </div>
+                  <div class="hidden md:flex items-center space-x-6">
+                    <a href="#ABOUT" class="text-gray-700 hover:text-blue-600">ABOUT</a>
+                    <a href="#PROJECTS" class="text-gray-700 hover:text-blue-600">PROJECTS</a>
+                    <a href="#SKILLS" class="text-gray-700 hover:text-blue-600">SKILLS</a>
+                    <a href="#CONTACT" class="text-gray-700 hover:text-blue-600">CONTACT</a>
+                  </div>
+                  </div>
+                </div>
+            </header>
+
+        <section id="ABOUT">
+            <h2 style="text-align: center;"><b>About Me</b></h2>
+            <div style="text-align: center;">
+                <img src="me.jpg" alt="Image" width="250">
+              </div>
+            
+        
+
+            <p style="font-size: x-large";>Hello, I am Boyanapally Mithul Sai, currently doing Computer Science And Engineering in Amrita Vishwa Vidyapeetam University. My hobbies are playing games, designing websites and a lot more. I love exploring the world. I love being consistent in whatever I do and love to find any kind of solutions for the problems.</p>
+
+        </section>
+
+        <br>    
+        <section id="PROJECTS">
+            <h2 style="text-align: center;">PROJECTS</h2>
+            <p style="text-align: center;">I have made three projects till now and given below are the three sample project photos</p>
+            <div class="grid">
+                <div class="project-item">
+                    <img src="gaming.jpeg" alt="Project 1" width="250">
+                <div class="projectname">Project 1 :- Gaming Project</div>
+                </div>
+                <div class="project-item">
+                    <img src="cooking.jpg" alt="Project 2" width="250">
+                    <div class="projectname">Project 2 :- Cooking Project</div>   
+                </div>
+                <div class="project-item">
+                    <img src="website.jpg" alt="Project 3" width="250">
+                    <div class="projectname">Project 3 :- Website Project</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="SKILLS">
+            <h2 style="text-align: center;">SKILLS</h2>
+            <p>HTML | CSS | PYTHON | JAVA  </p>
+        </section>
+
+        <br>
+        <br>
+
+        <section id="CONTACT">
+            <h2 style="text-align: center;">CONTACT</h2>
+            <h2 class="section-title">Contact <span>Me</span></h2>
+  
+            <form class="contact-form">
+              <input type="text" placeholder="Your Name" required>
+              <input type="email" placeholder="Your Email" required>
+              <input type="text" placeholder="Subject" required>
+              <textarea rows="6" placeholder="Your Message" required></textarea>
+              <button type="submit">Send Message</button>
+            </form>
+
+        </section>
+
+
+        <a href="https://www.instagram.com/mithul_c3/" target="_blank"class="link">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="50"> 
+        </a>
+        <br>
+        <br>
+        <a href=" https://www.linkedin.com/in/mithul-sai-037140321/" target="_blank"class="link">
+            <img src="linkedin.png" alt="linkedin" width="50">
+        </a>
+        <br>
+        <br>
+        <a href="https://github.com/BoyanapallyMithulSai" target="_blank" class="link">
+            <img src="github.png" alt="github" width="50">
+        </a>
+        
+        <footer>
+            <p style="text-align: center;">&copy; 2025 Boyanapally Mithul Sai. All Rights Reserved.</p>
+        </footer>
+
+</body>
+</html>
